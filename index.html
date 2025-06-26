@@ -19,15 +19,18 @@
             text-align: center;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
+
         header h1 {
             margin: 0;
             font-size: 2.5em;
             letter-spacing: 2px;
             font-family: 'Segoe UI', Arial, sans-serif;
         }
+
         nav {
             margin-top: 12px;
         }
+
         nav a {
             color: #fff;
             text-decoration: none;
@@ -36,9 +39,51 @@
             font-size: 1.1em;
             transition: color 0.2s;
         }
+
         nav a:hover {
             color: #ffd86b;
         }
+
+        .main-hero {
+            max-width: 600px;
+            margin: 48px auto 0 auto;
+            background: #fff;
+            padding: 40px 32px;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(78,84,200,0.08);
+            text-align: center;
+        }
+
+        .main-hero h2 {
+            margin-top: 0;
+            font-size: 2em;
+            color: #4e54c8;
+        }
+
+        .main-hero p {
+            color: #444;
+            font-size: 1.15em;
+            margin: 18px 0 32px 0;
+        }
+
+        .main-btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
+            color: #fff;
+            padding: 14px 36px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(78,84,200,0.12);
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+
+        .main-btn:hover {
+            background: linear-gradient(90deg, #8f94fb 0%, #4e54c8 100%);
+            box-shadow: 0 4px 16px rgba(78,84,200,0.18);
+        }
+
         footer {
             background: linear-gradient(90deg, #8f94fb 0%, #4e54c8 100%);
             color: #fff;
@@ -75,9 +120,18 @@
     </nav>
 </header>
 
+<main>
+    <section class="main-hero">
+        <h2>Добро пожаловать!</h2>
+        <p>Это ваш стартовый шаблон для красивого сайта. Здесь вы можете разместить любую информацию о себе или своем проекте.</p>
+        <a href="#" class="main-btn">Узнать больше</a>
+    </section>
+</main>
+
 <footer>
     © 2024 Мой Красивый Сайт | Сделано с любовью |
     <a href="#" class="footer-link">Политика конфиденциальности</a>
 </footer>
+
 </body>
 </html>
