@@ -140,6 +140,47 @@
             text-align: center;
         }
 
+        .faq-block {
+            max-width: 600px;
+            margin: 36px auto 0 auto;
+            background: #f9f9fd;
+            border-radius: 14px;
+            box-shadow: 0 2px 12px rgba(78,84,200,0.06);
+            padding: 28px 28px 20px 28px;
+            text-align: left;
+        }
+
+        .faq-block h3 {
+            margin-top: 0;
+            color: #4e54c8;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .faq-block details {
+            margin-bottom: 16px;
+        }
+
+        .faq-block summary {
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+            padding: 10px 0;
+        }
+
+        .faq-block summary::marker {
+            content: "▼";
+            font-size: 1.2em;
+            color: #4e54c8;
+            position: absolute;
+            left: -28px;
+            top: 2px;
+        }
+
+        .faq-block summary[open]::marker {
+            content: "▲";
+        }
+
         footer {
             background: linear-gradient(90deg, #8f94fb 0%, #4e54c8 100%);
             color: #fff;
@@ -197,6 +238,22 @@
         <p>
             Мы — команда энтузиастов, создающая современные и удобные веб-решения. Наша цель — делать интернет красивее и доступнее для всех. Мы любим новые технологии и ценим индивидуальный подход к каждому проекту.
         </p>
+    </section>
+
+    <section class="faq-block">
+        <h3>Часто задаваемые вопросы</h3>
+        <details>
+            <summary>Как быстро я получу результат?</summary>
+            <p>Обычно вы увидите результат сразу после отправки запроса.</p>
+        </details>
+        <details>
+            <summary>Можно ли использовать сайт бесплатно?</summary>
+            <p>Да, базовые функции доступны бесплатно для всех пользователей.</p>
+        </details>
+        <details>
+            <summary>Как связаться с поддержкой?</summary>
+            <p>Вы можете воспользоваться формой обратной связи на странице «Контакты».</p>
+        </details>
     </section>
 </main>
 
